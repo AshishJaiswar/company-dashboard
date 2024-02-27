@@ -21,11 +21,12 @@ export const authProvider: AuthBindings = {
           variables: { email },
           // pass the email to see if the user exists and if so, return the accessToken
           rawQuery: `
-            mutation Login ($email: String!) {
-              login (loginInput: { email: $email }) => {
+            mutation Login($email: String!) {
+              login(loginInput: { email: $email }) {
                 accessToken
               }
-            }`,
+            }
+          `,
         },
       });
 
