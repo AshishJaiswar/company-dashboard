@@ -1,8 +1,13 @@
 import { AuthPage } from "@refinedev/antd";
-import { authCredentials } from "../../providers/auth";
+import { authCredentials } from "@/providers";
 
-export function Login() {
+export const Login = () => {
   return (
-    <AuthPage type="login" formProps={{ initialValues: authCredentials }} />
+    <AuthPage
+      type="login"
+      formProps={{
+        initialValues: authCredentials,
+      }}
+    />
   );
-}
+};

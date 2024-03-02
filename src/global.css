@@ -1,0 +1,51 @@
+:root {
+  --dark: #141414;
+  --dark-2: #373737;
+  --primary: #00cc99;
+  --text: #f8f9fa;
+}
+
+/* Avatar */
+
+.avatar {
+  background-color: var(--primary);
+}
+
+.ant-avatar {
+  background-color: var(--primary);
+}
+/* ==================== */
+
+/* User menu content */
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-username {
+  padding: 12px 20px;
+  text-align: center;
+}
+
+.menu-items {
+  border-top: 1px solid #d9d9d9;
+  padding: 8px 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+/* ==================== */
+
+/* Header */
+.header-container {
+  background-color: var(--dark);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 24px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+/* ==================== */

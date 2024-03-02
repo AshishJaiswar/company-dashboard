@@ -1,3 +1,5 @@
-export function Register() {
-  return <div>Register</div>;
-}
+import { AuthPage } from "@refinedev/antd";
+
+export const Register = () => {
+  return <AuthPage type="register" />;
+};
